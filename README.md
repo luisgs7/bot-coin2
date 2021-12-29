@@ -2,7 +2,7 @@
 O Bot Coin é um projeto <strong>Open Source</strong> de um bot para o Telegram, que possibilita consultar o valor em tempo real do dolar, bitcoin e etherium em uma API externa.
 
 O Bot Coin possui um menu que possibilita realizar conversão entre
- dolar, bitcoin, etherium e real, bastanto apenas o usuário acessar a
+ dolar, bitcoin, etherium e real, bastando apenas o usuário acessar a
  opção desejada.
 
 ## Stack
