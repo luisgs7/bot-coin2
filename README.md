@@ -1,7 +1,7 @@
 ###  Bot Coin
-O Bot Coin é um projeto <strong>Open Source</strong> de um bot para o Telegram, que possibilita consultar em tempo real a cotação do dolar e bitcoin em uma API externa.
+O Bot Coin é um projeto <strong>Open Source</strong> de um bot para o Telegram, que possibilita consultar e converter valores em tempo real a partir da cotação do dolar e bitcoin em uma API externa.
 
-O Bot Coin possui um menu que possibilita realizar conversão entre dolar, bitcoin e real, bastanto apenas o usuário acessar a opção desejada.
+O Bot Coin possui um menu que possibilita acessar a cotação de dólar e bitcoin, além de realizar conversões entre dolar, bitcoin e real, bastanto apenas o usuário acessar a opção desejada.
 
 ## Stack
 <li>
