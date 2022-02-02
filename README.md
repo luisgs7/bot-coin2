@@ -16,9 +16,6 @@ O Bot Coin possui um menu que possibilita realizar conversão entre
 Requests</a>
 </li>
 <li>
-<a  href="https://github.com/psf/black">Black</a>
-</li>
-<li>
 <a  href="https://core.telegram.org/bots">Telegram Bot</a>
 </li>
 <li>
