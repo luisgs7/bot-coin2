@@ -11,15 +11,15 @@ O Bot Coin é um projeto <strong>Open Source</strong> de um bot para o Telegram,
 </li>
 
 <li>
-<a href="https://docs.awesomeapi.com.br/">Awesomeapi</a> 
-</li>
-
-<li>
 <a  href="https://docs.pytest.org/en/latest/">Pytest</a>
 </li>
 
 <li>
 <a  href="https://docs.python-requests.org/en/latest/">Requests</a>
+</li>
+
+<li>
+<a  href="https://hgbrasil.com/status/finance">Hgbrasil</a> (Api de dados)
 </li>
 
 <li>
