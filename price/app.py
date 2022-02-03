@@ -1,22 +1,25 @@
 import requests
+import os
 
+my_apikye = os.environ['APIKYE']
+
+
+url = f'https://api.hgbrasil.com/finance?key={my_apikye}'
 
 def price_dolar():
-  data = requests.get("https://economia.awesomeapi.com.br/json/last/USD-BRL").json()
-  value = float(data["USDBRL"]["high"])
-  date_time = data["USDBRL"]["create_date"]
+  data = requests.get(url).json()
+  value = float(data["results"]["currencies"]["USD"]["buy"])
   value = format(value, '.2f')
-  return (value, date_time)
+  return value
 
 def price_btc():
-  data = requests.get("https://economia.awesomeapi.com.br/json/last/BTC-BRL").json()
-  value = float(data["BTCBRL"]["bid"].replace('.',''))
+  data = requests.get(url).json()
+  value = float(data["results"]["currencies"]["BTC"]["buy"])
   value = format(value, '.2f')
-  date_time = data["BTCBRL"]["create_date"]
-  return (value, date_time)
+  return value
 
-def price_eth():
-  data = requests.get("https://api.binance.com/api/v3/ticker/price?symbol=ETHBRL").json()
-  value = float(data["price"])
+def price_eur():
+  data = requests.get(url).json()
+  value = float(data["results"]["currencies"]["EUR"]["buy"])
   value = format(value, '.2f')
   return value

@@ -3,12 +3,12 @@ import time
 import json
 import os
 
-from price.app import price_dolar, price_btc, price_eth
+from price.app import price_dolar, price_btc, price_eur
 
 
 class TelegramBot:
     def __init__(self):
-        token = my_secret = os.environ['Token']
+        token = my_secret = os.environ['TOKEN']
         self.url_base = f'https://api.telegram.org/bot{token}/'
 
     def Iniciar(self):
@@ -42,19 +42,19 @@ class TelegramBot:
             return f'''Olá bem vindo ao BotCoin, digite a opção desejada:{os.linesep}
       1 - Cotação do Dólar Americano {os.linesep}
       2 - Cotação do Bitcoin {os.linesep}
-      3 - Cotação do Etherium {os.linesep}   
+      3 - Cotação do Euro {os.linesep}   
       '''
         if mensagem in '1':
-            dolar, date_time = price_dolar()
-            return f'''Cotação do Dólar{os.linesep}Dólar: R$ {dolar}{os.linesep}Data: {date_time}'''
+            dolar = price_dolar()
+            return f'''Cotação do Dólar{os.linesep}Dólar: R$ {dolar}{os.linesep}'''
 
         elif mensagem in '2':
-            btc, date_time = price_btc()
-            return f'''Cotação do Bitcoin{os.linesep}Bitcoin: R$ {btc}{os.linesep}Data: {date_time}'''
+            btc = price_btc()
+            return f'''Cotação do Bitcoin{os.linesep}Bitcoin: R$ {btc}{os.linesep}'''
 
         elif mensagem in '3':
-           eth = price_eth()
-           return f'''Cotação do Etherium{os.linesep}Etherium: R$ {eth}'''
+           eur = price_eur()
+           return f'''Cotação do Euro{os.linesep}Euro: € {eur}'''
 
         else:
             return 'Gostaria de acessar o menu? Digite "menu"'
