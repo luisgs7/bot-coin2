@@ -11,10 +11,6 @@ O Bot Coin é um projeto <strong>Open Source</strong> de um bot para o Telegram,
 </li>
 
 <li>
-<a href="https://docs.awesomeapi.com.br/">Awesomeapi</a> 
-</li>
-
-<li>
 <a  href="https://docs.pytest.org/en/latest/">Pytest</a>
 </li>
 
