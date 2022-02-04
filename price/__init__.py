@@ -1,0 +1,1 @@
+from price.app import price_dolar, price_btc, price_eur
