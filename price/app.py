@@ -1,7 +1,10 @@
 import requests
 import os
+import dotenv
 
-my_apikye = os.environ['APIKYE']
+dotenv.load_dotenv(dotenv.find_dotenv())
+
+my_apikye = os.getenv("APIKYE") 
 
 
 url = f'https://api.hgbrasil.com/finance?key={my_apikye}'
