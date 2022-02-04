@@ -37,7 +37,7 @@ Está em desenvolvimento a funcionalidade de  converter valores informados pelo 
 </li>
 
 ## Bot Screens
-<br/>
+
 
 ## 01 - Start Bot
 <p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/01.jpg" width="200" height="400" ></p>
@@ -54,7 +54,7 @@ Está em desenvolvimento a funcionalidade de  converter valores informados pelo 
 <img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/04.jpg" width="200" height="400">
 <br/>
 
-# Start the project
+## Start the project
 
 01 - Primeiro realize o clone do repositório, ou um fork para o seu usuário no github.
 
