@@ -2,13 +2,17 @@ import requests
 import time
 import json
 import os
+import dotenv
+
+dotenv.load_dotenv(dotenv.find_dotenv())
+
+token = os.getenv("TOKEN") 
 
 from price.app import price_dolar, price_btc, price_eur
 
 
 class TelegramBot:
     def __init__(self):
-        token = my_secret = os.environ['TOKEN']
         self.url_base = f'https://api.telegram.org/bot{token}/'
 
     def Iniciar(self):
