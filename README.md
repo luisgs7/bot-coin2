@@ -37,10 +37,15 @@ Está em desenvolvimento a funcionalidade de  converter valores informados pelo 
 </li>
 
 ## Bot Screens
-<li>
-Menu Principal
-<img  src = ""/>
-</li>
+<br/>
 
-## Use Bot Coin  
-Installation... 
+## 01 - Start Bot
+<p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/01.jpg"></p>
+<br/>
+
+## 02 - Acessando o Menu do Bot
+<p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/02.jpg"></p>
+<br/>
+
+## 03 - Acessando as Cotações do Dólar, Bitcoin e Euro
+<p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/02.jpg"></p>
