@@ -4,6 +4,8 @@ import json
 import os
 import dotenv
 
+from bot.messages import menu_message, menu_help, convert_value 
+
 dotenv.load_dotenv(dotenv.find_dotenv())
 
 token = os.getenv("TOKEN") 
@@ -24,11 +26,11 @@ class TelegramBot:
             if dados:
                 for dado in dados:
                     update_id = dado['update_id']
-                    mensagem = str(dado["message"]["text"])
+                    message = str(dado["message"]["text"])
                     chat_id = dado["message"]["from"]["id"]
 
-                    primeira_mensagem = int(dado["message"]["message_id"]) == 1
-                    resposta = self.criar_resposta(mensagem, primeira_mensagem)
+                    primeira_message = int(dado["message"]["message_id"]) == 1
+                    resposta = self.criar_resposta(message, primeira_message)
                     self.responder(resposta, chat_id)
 
     def obter_novas_mensagens(self, update_id):
@@ -39,29 +41,28 @@ class TelegramBot:
         resultado = requests.get(link_requisicao)
         return json.loads(resultado.content)
 
-    def criar_resposta(self, mensagem, primeira_mensagem):
-        ## Resposta do usuário
-        time.sleep(1)
-        if primeira_mensagem == True or mensagem.lower() in 'menu':
-            return f'''Olá bem vindo ao BotCoin, digite a opção desejada:{os.linesep}
-      1 - Cotação do Dólar Americano {os.linesep}
-      2 - Cotação do Bitcoin {os.linesep}
-      3 - Cotação do Euro {os.linesep}   
-      '''
-        if mensagem in '1':
+    def criar_resposta(self, message, primeira_message):
+        
+        if primeira_message == True or message.lower() in 'menu':
+            return menu_message
+
+        if message in '1':
             dolar = price_dolar()
             return f'''Cotação do Dólar{os.linesep}Dólar: R$ {dolar}{os.linesep}'''
 
-        elif mensagem in '2':
+        elif message in '2':
             btc = price_btc()
             return f'''Cotação do Bitcoin{os.linesep}Bitcoin: R$ {btc}{os.linesep}'''
 
-        elif mensagem in '3':
+        elif message in '3':
            eur = price_eur()
            return f'''Cotação do Euro{os.linesep}Euro: € {eur}'''
+        
+        elif message in '4':
+            return convert_value
 
         else:
-            return 'Gostaria de acessar o menu? Digite "menu"'
+            return menu_help
 
     def responder(self, resposta, chat_id):
         link_requisicao = f'{self.url_base}sendMessage?chat_id={chat_id}&text={resposta}'
