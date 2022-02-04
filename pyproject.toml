@@ -1,17 +1,16 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool]
 [tool.poetry]
+authors = ["luisgs7 <luisgsilva270@gmail.com>"]
+description = "O Bot Coin é um projeto Open Source de um bot para o Telegram, que possibilita consultar o valor em tempo real do dolar, bitcoin e etherium em uma API externa."
 name = "bot-coin"
 version = "0.0.1"
-description = "O Bot Coin é um projeto Open Source de um bot para o Telegram, que possibilita consultar o valor em tempo real do dolar, bitcoin e etherium em uma API externa."
-authors = ["luisgs7 <luisgsilva270@gmail.com>"]
-
 [tool.poetry.dependencies]
-python = "^3.10"
-requests = "^2.26.0"
-python-dotenv = "^0.19.2"
 black = "^21.12b0"
-
+python = "^3.8"
+python-dotenv = "^0.19.2"
+requests = "^2.26.0"
 [tool.poetry.dev-dependencies]
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
