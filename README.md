@@ -40,12 +40,14 @@ Está em desenvolvimento a funcionalidade de  converter valores informados pelo 
 <br/>
 
 ## 01 - Start Bot
-<p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/01.jpg"></p>
-<br/>
+<p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/01.jpg" width="200" height="400" ></p>
+
 
 ## 02 - Acessando o Menu do Bot
-<p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/02.jpg"></p>
-<br/>
+<p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/02.jpg" width="200" height="400"></p>
+
 
 ## 03 - Acessando as Cotações do Dólar, Bitcoin e Euro
-<p><img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/02.jpg"></p>
+<img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/03.jpg" width="200" height="400">
+<br/>
+<img alt="Image" title="icon" src="https://raw.githubusercontent.com/luisgs7/bot-coin/main/screens-bot/04.jpg" width="200" height="400">
